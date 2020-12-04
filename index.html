@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html><head>
+  <link rel="stylesheet" type="text/css" href="seminar.css">
+  <title>Seminars</title>
+</head>
+
+<h1>Delhi Theoretical Computer Science Seminar</h1>
+<body>
+
+
+<div class="col-content">
+  We meet on <strong>Wednesdays</strong>. The talk timings are <strong>12:00 to 12:50</strong> followed by 10 minute Q&A session.
+<br>
+<h3>Upcoming Talks</h3>
+<ul>
+    <li>
+    <span class="title"><a href="#" onclick="toggle_abstract(event);">
+        Time-Space Tradeoffs for Function Inversion </a></span>
+    <span class="date"> December 9, 2020 </span>
+    <span class="speaker"> Venkata Koppula </span>
+    <span class="abstract">
+        One-way functions - functions that can be evaluated easily on any input, but are hard to invert - are one of the fundamental building blocks of cryptography. In this talk, we will discuss the following question : given a function f, how had/easy is it to invert y = f(x) if we're allowed unbounded preprocessing (before receiving y). More formally, we will work in the oracle setting. An adversary is first given oracle access to the function f. After some preprocessing, it produces an S bit state. Given this state, how many oracle calls are necessary/sufficient to invert f(x) (for a random x)? <br><br>
+
+        We will discuss (a subset of) the following results:<br> 
+        - Yao's lower bound [1]: For functions with domain [N], if S bits are produced during preprocessing, and T oracle calls are required in the online phase, then S.T must be at least N. <br>
+        - Hellman/Fiat-Naor's upper bound[2,3] - One can invert f(x) using T oracle calls and S bits of preprocessing advice if S^3.T is about N^3. In particular, T = S = N^{0.75} is enough to invert. <br>
+        - Is it possible to improve the lower bound? Corrigan-Gibbs, Kogan, in a recent work [4], showed that this would imply new circuit lower bounds (and hence is believed to be hard). <br>
+        - Finally, in the last part of the talk, I will discuss the scenario where the adversary is allowed to be quantum, and even the preprocessing based advice could be quantum. (I will try to ensure that no quantum background is required. In any case, this will only be the last ten/fifteen minutes). For this, I will discuss the results from two works by Nayebi et al [5] and Chung et al [6].  <br><br>
+
+        References:
+        [1] Yao, A.C.: Coherent functions and program checkers (extended abstract). In: STOC(1990)<br>
+        [2] Hellman, M.: A cryptanalytic time-memory trade-off. IEEE Transactions on Information Theory(1980)<br>
+        [3] Fiat, A., Naor, M.: Rigorous time/space tradeoffs for inverting functions. In: STOC(1991).<br>
+        [4] Corrigan-Gibbs, H., Kogan, D.: The Function-Inversion Problem: Barriers and Opportunities. In: TCC(2019)<br>
+        [5] Nayebi, A., Aaronson, S., Belovs, A., Trevisan, L.: Quantum lower bound for inverting a permutation with advice. In: Quantum Information & Computation(2015).<br>
+        [6] Chung, K., Guo, S., Liu, Q., Qian, L.: Tight Quantum Time-Space Tradeoffs for Function Inversion. In: FOCS(2020)<br>
+    </span>
+    </li>
+
+</ul>
+
+
+<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=ay52ZW5rYXRhLnZrQGdtYWlsLmNvbQ&amp;src=NGFpcWVxNGtwZXV0cnM4YmlkbGtocTVvMDBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23E67C73&amp;color=%23009688" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+
+<h3>Archive of Previous Talks</h3>
+<ul>
+
+<table>
+<tr>
+    <th style="width:150px">Date</th>
+    <th style="width:180px">Speaker</th>
+    <th>Title</th>
+</tr>
+<tr>
+    <td>--</td>
+    <td>--</td>
+    <td>
+    <span class="title"><a href="#" onclick="toggle_abstract(event);">
+            -Nil- </a></span>
+    <span class="abstract">
+      -Nil-
+    </span>
+    </td>
+</tr>
+
+</table>
+
+</ul>
+</div>
+
+<script type="text/javascript">
+function toggle_abstract(e){
+    e.preventDefault();
+    abstract = e.target.parentNode.parentNode.getElementsByClassName('abstract')[0];
+	  if (abstract.style.display=="block"){abstract.style.display="none";}
+    else {abstract.style.display="block";}
+}
+function addScrollEvent() {
+    if (window.innerHeight >= documentHeight()) {loadMoreContent();}
+    else {window.addEventListener('scroll', fetchMore, true);}
+}
+addScrollEvent();
+</script>
+
+
+</body></html>
