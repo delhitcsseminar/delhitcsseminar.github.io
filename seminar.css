@@ -1,5 +1,5 @@
 h1{
-  background-color: SlateBlue;
+  background-color: rgb(71, 51, 194);
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   padding-bottom: 16px;
@@ -7,6 +7,7 @@ h1{
   position: absolute;
   text-align: center;
   left: 0px;
+  top: -22px;
   right: 0px;
 }
 
