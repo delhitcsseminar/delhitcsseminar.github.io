@@ -15,25 +15,33 @@
 <ul>
     <li>
     <span class="title"><a href="#" onclick="toggle_abstract(event);">
-        Time-Space Tradeoffs for Function Inversion </a></span>
-    <span class="date"> December 9, 2020 </span>
+        Improved Approximations for Min Sum Vertex Cover and Generalized Min Sum Set Cover </a></span>
+    <span class="date"> December 23, 2020 </span>
+    <span class="speaker"> Jatin Batra </span>
+    <span class="abstract">
+        We study the generalized min sum set cover (GMSSC) problem, wherein given a collection of hyperedges E with arbitrary covering requirements k_e, the goal is to find an ordering of the vertices to minimize the total cover time of the hyperedges; a hyperedge e is considered covered by the first time when k_e many of its vertices appear in the ordering. We give a 4.642 approximation algorithm for GMSSC, coming close to the best possible bound of 4, already for the classical special case (with all k_e=1) of min sum set cover (MSSC) studied by Feige, Lovász and Tetali, and improving upon the previous best known bound of 12.4 due to Im, Sviridenko and van der Zwaan. Our algorithm is based on transforming the LP solution by a suitable kernel and applying randomized rounding. This also gives an LP-based 4 approximation for MSSC. As part of the analysis of our algorithm, we also derive an inequality on the lower tail of a sum of independent Bernoulli random variables, which might be of independent interest and broader utility.
+
+        Another well-known special case is the min sum vertex cover (MSVC) problem, in which the input hypergraph is a graph and k_e=1, for every edge. We give a 16/9 approximation for MSVC, and show a matching integrality gap for the natural LP relaxation. This improves upon the previous best 1.999946 approximation of Barenholz, Feige and Peleg. (The claimed 1.79 approximation result of Iwata, Tetali and Tripathi for the MSVC turned out have an unfortunate, seemingly unfixable, mistake in it.) Finally, we revisit MSSC and consider the ell_p norm of cover-time of the hyperedges. Using a dual fitting argument, we show that the natural greedy algorithm achieves tight, up to NP-hardness, approximation guarantees of (p+1)^{1+1/p}, for all p>=1. For p=1, this gives yet another proof of the 4 approximation for MSSC. 
+    </span>
+    </li>
+
+    <li>
+    <span class="title"><a href="#" onclick="toggle_abstract(event);">
+        TBD </a></span>
+    <span class="date"> January 06, 2020 </span>
+    <span class="speaker"> Syamantak Das </span>
+    <span class="abstract">
+        TBD
+    </span>
+    </li>
+
+    <li>
+    <span class="title"><a href="#" onclick="toggle_abstract(event);">
+        Data Structures Meet Cryptography </a></span>
+    <span class="date"> January 20, 2020 </span>
     <span class="speaker"> Venkata Koppula </span>
     <span class="abstract">
-        One-way functions - functions that can be evaluated easily on any input, but are hard to invert - are one of the fundamental building blocks of cryptography. In this talk, we will discuss the following question : given a function f, how hard/easy is it to invert y = f(x) if we're allowed unbounded preprocessing (before receiving y). More formally, we will work in the oracle setting. An adversary is first given (unbounded) oracle access to the function f to produce an S bit state. After this preprocessing, it is given f(x) (for a random x). Now, how many further oracle calls to f are necessary/sufficient to invert f(x)?  <br><br>
-
-        We will discuss (a subset of) the following results:<br> 
-        - Yao's lower bound [1]: For functions with domain [N], if S bits are produced during preprocessing, and T oracle calls are required in the online phase, then S.T must be at least N. <br>
-        - Hellman/Fiat-Naor's upper bound[2,3] - One can invert f(x) using T oracle calls and S bits of preprocessing advice if S^3.T is about N^3. In particular, T = S = N^{0.75} is enough to invert. <br>
-        - Is it possible to improve the lower bound? Corrigan-Gibbs, Kogan, in a recent work [4], showed that this would imply new circuit lower bounds (and hence is believed to be hard). <br>
-        - Finally, in the last part of the talk, I will discuss the scenario where the adversary is allowed to be quantum, and even the preprocessing based advice could be quantum. (I will try to ensure that no quantum background is required. In any case, this will only be the last ten/fifteen minutes). For this, I will discuss the results from two works by Nayebi et al [5] and Chung et al [6].  <br><br>
-
-        References:
-        [1] Yao, A.C.: Coherent functions and program checkers (extended abstract). In: STOC(1990)<br>
-        [2] Hellman, M.: A cryptanalytic time-memory trade-off. IEEE Transactions on Information Theory(1980)<br>
-        [3] Fiat, A., Naor, M.: Rigorous time/space tradeoffs for inverting functions. In: STOC(1991).<br>
-        [4] Corrigan-Gibbs, H., Kogan, D.: The Function-Inversion Problem: Barriers and Opportunities. In: TCC(2019)<br>
-        [5] Nayebi, A., Aaronson, S., Belovs, A., Trevisan, L.: Quantum lower bound for inverting a permutation with advice. In: Quantum Information & Computation(2015).<br>
-        [6] Chung, K., Guo, S., Liu, Q., Qian, L.: Tight Quantum Time-Space Tradeoffs for Function Inversion. In: FOCS(2020)<br>
+        TBD
     </span>
     </li>
 
@@ -55,11 +63,29 @@
     <td>--</td>
     <td>--</td>
     <td>
+    <li>
     <span class="title"><a href="#" onclick="toggle_abstract(event);">
-            -Nil- </a></span>
+        Time-Space Tradeoffs for Function Inversion </a></span>
+    <span class="date"> December 9, 2020 </span>
+    <span class="speaker"> Venkata Koppula </span>
     <span class="abstract">
-      -Nil-
+        One-way functions - functions that can be evaluated easily on any input, but are hard to invert - are one of the fundamental building blocks of cryptography. In this talk, we will discuss the following question : given a function f, how hard/easy is it to invert y = f(x) if we're allowed unbounded preprocessing (before receiving y). More formally, we will work in the oracle setting. An adversary is first given (unbounded) oracle access to the function f to produce an S bit state. After this preprocessing, it is given f(x) (for a random x). Now, how many further oracle calls to f are necessary/sufficient to invert f(x)?  <br><br>
+
+        We will discuss (a subset of) the following results:<br> 
+        - Yao's lower bound [1]: For functions with domain [N], if S bits are produced during preprocessing, and T oracle calls are required in the online phase, then S.T must be at least N. <br>
+        - Hellman/Fiat-Naor's upper bound[2,3] - One can invert f(x) using T oracle calls and S bits of preprocessing advice if S^3.T is about N^3. In particular, T = S = N^{0.75} is enough to invert. <br>
+        - Is it possible to improve the lower bound? Corrigan-Gibbs, Kogan, in a recent work [4], showed that this would imply new circuit lower bounds (and hence is believed to be hard). <br>
+        - Finally, in the last part of the talk, I will discuss the scenario where the adversary is allowed to be quantum, and even the preprocessing based advice could be quantum. (I will try to ensure that no quantum background is required. In any case, this will only be the last ten/fifteen minutes). For this, I will discuss the results from two works by Nayebi et al [5] and Chung et al [6].  <br><br>
+
+        References:
+        [1] Yao, A.C.: Coherent functions and program checkers (extended abstract). In: STOC(1990)<br>
+        [2] Hellman, M.: A cryptanalytic time-memory trade-off. IEEE Transactions on Information Theory(1980)<br>
+        [3] Fiat, A., Naor, M.: Rigorous time/space tradeoffs for inverting functions. In: STOC(1991).<br>
+        [4] Corrigan-Gibbs, H., Kogan, D.: The Function-Inversion Problem: Barriers and Opportunities. In: TCC(2019)<br>
+        [5] Nayebi, A., Aaronson, S., Belovs, A., Trevisan, L.: Quantum lower bound for inverting a permutation with advice. In: Quantum Information & Computation(2015).<br>
+        [6] Chung, K., Guo, S., Liu, Q., Qian, L.: Tight Quantum Time-Space Tradeoffs for Function Inversion. In: FOCS(2020)<br>
     </span>
+    </li>
     </td>
 </tr>
 
