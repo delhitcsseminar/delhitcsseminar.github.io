@@ -16,42 +16,46 @@
 
     <li>
     <span class="title"><a href="#" onclick="toggle_abstract(event);">
-        Terminal Cuts and Mimicking Networks </a></span>
-    <span class="date"> January 06, 2021 </span>
-    <span class="speaker"> Syamantak Das </span>
-    <span class="abstract">
-        <p>Graph compression or sparsification is a basic information-theoretic and computational question of the following nature: given a graph G, can we compute a “compact” representation of G, with potentially fewer vertices or edges, that preserves important information? Such objects play a major role in the design of efficient graph algorithms and thus have been a center of study for decades. For instance, the notion of graph spanners aim to preserve the distance between nodes in the graphs while reducing the number of edges, while the notion of vertex sparsification focuses on preserving some properties of the designated nodes such as connectivity, cut sizes, or effective resistances. In this talk, I shall mostly do a survey of some recent developments in vertex sparsification of graphs. The talk would be mostly based on the following papers.<br>
- 
-
-        [1] Mimicking Networks and Succinct Representations of Terminal Cuts. Robert Krauthgamer and Inbal Rika. [SODA 2013]<br>
-
-        [2] Vertex Sparsification for Edge Connectivity. Parinya Chalermsook, D., Bundit Laekhanukit, Yunbum Kook, Yang P. Liu, Richard Peng, Mark Sellke, Daniel Vaz:  [SODA 2021]</p>
-    </span>
-    </li>
-
-    <li>
-    <span class="title"><a href="#" onclick="toggle_abstract(event);">
-        Time-Space Tradeoffs for Function Inversion - Part II </a></span>
-    <span class="date"> January 20, 2021 </span>
-    <span class="speaker"> Venkata Koppula </span>
-    <span class="abstract">
-        TBD
-    </span>
-    </li>
-
-    <li>
-    <span class="title"><a href="#" onclick="toggle_abstract(event);">
         Uniform Capacitated Facility Location Problems with Penalties/Outliers </a></span>
-    <span class="date"> February 03, 2021 </span>
-    <span class="speaker"> Rajni </span>
+    <span class="date"> February 17, 2021 </span>
+    <span class="speaker"> Sapna Grover </span>
     <span class="abstract">
-        <p>We present a framework to design approximation algorithms for capacitated facility location problems with penalties/outliers using LP-rounding.</p>
+        <p> In this paper, we give the first constant factor approximation 
+        	algorithm for capacitated knapsack median problem (CKnM) for hard uniform
+ 			capacities, violating the budget by a factor of ($1 + \epsilon$) and
+			capacities by a ($2 + \epsilon$) factor. To the best of our knowledge, no
+			constant factor approximation algorithm is known for the problem even with
+			capacity/budget/both violations. Even for the uncapacitated variant of the
+			problem, the natural LP is known to have an unbounded integrality gap. We
+			also present two constant factor approximation algorithms for Capacitated
+			k-Facility Location problem, with violation in capacity and/or cardinality,
+			thus, presenting a trade-off in both violations. </p>
 
-        <p>We apply our framework to obtain first constant factor approximations for capacitated facility location problem with outlier (CFLPO) and capacitated $k$-facility location problem with penalty(C$k$FLPP) for hard uniform capacities using LP-rounding. Our solutions incur slight violations in capacities, ($1 + \epsilon$) for the problems without cardinality($k$) constraint and ($2 + \epsilon$) for the problems with the cardinality constraint. For the outlier variant, we also incur a small loss ($1 + \epsilon$) in outliers. Due to the hardness of the underlying problems, the violations are inevitable. Thus we achieve the best possible by rounding the solution of natural LP for these problems. To the best of our knowledge, no results are known for CFLPO and C$k$FLPP. </p>
+		<p> As a by-product, a constant factor approximation algorithm for 
+			capacitated facility location problem with uniform capacities 
+			is presented, violating the  capacities by ($1 + \epsilon$) factor. 
+			Though constant factor results are known for the problem without 
+			violating the capacities, the result is interesting as it is 
+			obtained by rounding the solution to the natural LP, which is 
+			known to have an unbounded integrality gap without violating 
+			the capacities. Thus, we achieve the best possible from the natural 
+			LP for the problem. 
+		</p>
 
-        <p>Our results are obtained by rounding the solution to the natural LP once again exhibiting the power of LP-rounding technique. Solutions obtained by LP-rounding are easy to integrate with other LP-based algorithms.   </p>
+		<p> Joint work with Neelima Gupta, Samir Khuller and Aditya Pancholi
+   		</p>
     </span>
     </li>
+
+    <li>
+    <span class="title"><a href="#" onclick="toggle_abstract(event);">
+        TBD </a></span>
+    <span class="date"> March 03, 2021 </span>
+    <span class="speaker"> Dishant Goyal </span>
+    <span class="abstract"> TBD </span>
+    </li>
+
+
 </ul>
 
 
@@ -66,6 +70,45 @@
     <th style="width:180px">Speaker</th>
     <th>Title</th>
 </tr>
+
+<tr>
+	<td> February 03, 2021 </td>
+	<td> Rajni Dabas </td>
+	<td> 
+		<li>
+    		<span class="title"><a href="#" onclick="toggle_abstract(event);">
+        		Uniform Capacitated Facility Location Problems with Penalties/Outliers </a></span>
+		    <span class="abstract">
+		        <p>We present a framework to design approximation algorithms for capacitated facility location problems with penalties/outliers using LP-rounding.</p>
+
+		        <p>We apply our framework to obtain first constant factor approximations for capacitated facility location problem with outlier (CFLPO) and capacitated $k$-facility location problem with penalty(C$k$FLPP) for hard uniform capacities using LP-rounding. Our solutions incur slight violations in capacities, ($1 + \epsilon$) for the problems without cardinality($k$) constraint and ($2 + \epsilon$) for the problems with the cardinality constraint. For the outlier variant, we also incur a small loss ($1 + \epsilon$) in outliers. Due to the hardness of the underlying problems, the violations are inevitable. Thus we achieve the best possible by rounding the solution of natural LP for these problems. To the best of our knowledge, no results are known for CFLPO and C$k$FLPP. </p>
+
+		        <p>Our results are obtained by rounding the solution to the natural LP once again exhibiting the power of LP-rounding technique. Solutions obtained by LP-rounding are easy to integrate with other LP-based algorithms.   </p>
+		    </span>
+    	</li>
+    </td>
+</tr>
+
+<tr>
+	<td> January 06, 2021 </td>
+	<td> Syamantak Das </td>
+	<td>
+		<li>
+			<span class="title"><a href="#" onclick="toggle_abstract(event);"> Terminal Cuts and Mimicking Networks</a></span>
+			<span class="abstract">
+				<p>Graph compression or sparsification is a basic information-theoretic and computational question of the following nature: given a graph G, can we compute a “compact” representation of G, with potentially fewer vertices or edges, that preserves important information? Such objects play a major role in the design of efficient graph algorithms and thus have been a center of study for decades. For instance, the notion of graph spanners aim to preserve the distance between nodes in the graphs while reducing the number of edges, while the notion of vertex sparsification focuses on preserving some properties of the designated nodes such as connectivity, cut sizes, or effective resistances. In this talk, I shall mostly do a survey of some recent developments in vertex sparsification of graphs. The talk would be mostly based on the following papers.<br>
+ 
+
+        		[1] Mimicking Networks and Succinct Representations of Terminal Cuts. Robert Krauthgamer and Inbal Rika. [SODA 2013]<br>
+
+        		[2] Vertex Sparsification for Edge Connectivity. Parinya Chalermsook, D., Bundit Laekhanukit, Yunbum Kook, Yang P. Liu, Richard Peng, Mark Sellke, Daniel Vaz:  [SODA 2021]
+        		</p>
+        	</span>
+        </li>
+    </td>
+
+</tr>
+
 <tr>
     <td>December 23, 2020</td>
     <td>Jatin Batra</td>
