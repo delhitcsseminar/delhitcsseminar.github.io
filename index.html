@@ -13,46 +13,27 @@
 <br>
 <h3>Upcoming Talks</h3>
 <ul>
-
     <li>
     <span class="title"><a href="#" onclick="toggle_abstract(event);">
-        Uniform Capacitated Facility Location Problems with Penalties/Outliers </a></span>
-    <span class="date"> February 17, 2021 </span>
-    <span class="speaker"> Sapna Grover </span>
-    <span class="abstract">
-        <p> In this paper, we give the first constant factor approximation 
-        	algorithm for capacitated knapsack median problem (CKnM) for hard uniform
- 			capacities, violating the budget by a factor of ($1 + \epsilon$) and
-			capacities by a ($2 + \epsilon$) factor. To the best of our knowledge, no
-			constant factor approximation algorithm is known for the problem even with
-			capacity/budget/both violations. Even for the uncapacitated variant of the
-			problem, the natural LP is known to have an unbounded integrality gap. We
-			also present two constant factor approximation algorithms for Capacitated
-			k-Facility Location problem, with violation in capacity and/or cardinality,
-			thus, presenting a trade-off in both violations. </p>
-
-		<p> As a by-product, a constant factor approximation algorithm for 
-			capacitated facility location problem with uniform capacities 
-			is presented, violating the  capacities by ($1 + \epsilon$) factor. 
-			Though constant factor results are known for the problem without 
-			violating the capacities, the result is interesting as it is 
-			obtained by rounding the solution to the natural LP, which is 
-			known to have an unbounded integrality gap without violating 
-			the capacities. Thus, we achieve the best possible from the natural 
-			LP for the problem. 
-		</p>
-
-		<p> Joint work with Neelima Gupta, Samir Khuller and Aditya Pancholi
-   		</p>
-    </span>
-    </li>
-
-    <li>
-    <span class="title"><a href="#" onclick="toggle_abstract(event);">
-        TBD </a></span>
+        Hardness of Approximation of k-Median and k-Means problem </a></span>
     <span class="date"> March 03, 2021 </span>
     <span class="speaker"> Dishant Goyal </span>
-    <span class="abstract"> TBD </span>
+    <span class="abstract"> 
+    	<p>In the k-median problem, we are given a set of clients C and a set of feasible facility locations L in a metric space (X,d). The task is to open a set F of 'k' facilities such that the total assignment cost of clients is minimized, i.e., minimize sum_{x in C} d(x,F), where d(x,F) denotes the distance of x to the closest facility location in F.</p>
+		
+		<p>The k-means problem is defined similarly where d(x,F) is replaced by the squared distance d^2(x,F). I will present the hardness of approximation results for both the problems in general metric spaces and lp-normed spaces. These results are based on the following two works: </p>
+
+		1. Guha, S., & Khuller, S. "Greedy strikes back: improved facility location algorithms." [SODA 1998]<br/>
+		
+		2. Cohen-Addad, Vincent, and C. S. Karthik. "Inapproximability of clustering in lp metrics." [FOCS 2019]
+ 
+		<p>The problem has another variant, where one is allowed to open a facility anywhere in a metric space, instead of just L. In this version, there could be an infinite number of feasible facility locations. For this variant, stronger inapproximability results are known. I will present the results that are based on the following work:</p>
+ 
+		1. Cohen-Addad, Vincent, C. S. Karthik, and Euiwoong Lee. "On Approximability of Clustering Problems Without Candidate Centers." [SODA 2021]
+ 
+		<p>The talk would be more like a survey with a simple description of some inapproximability results.</p>
+
+    </span>
     </li>
 
 
@@ -69,6 +50,41 @@
     <th style="width:150px">Date</th>
     <th style="width:180px">Speaker</th>
     <th>Title</th>
+</tr>
+
+<tr>
+	<td> February 17, 2021 </td>
+	<td> Sapna Grover </td>
+	<td> 
+		<li>
+			<span class="title"><a href="#" onclick="toggle_abstract(event);">
+				Constant Factor Approximation Algorithm for Uniform Hard Capacitated Knapsack Median Problem </a>
+			</span>
+			<span class="abstract">
+				<p>
+					In this paper, we give the first constant factor
+					approximation algorithm for capacitated knapsack median problem (CKnM)
+					for hard uniform capacities, violating the budget by a factor of ($1 +
+					\epsilon$) and capacities by a ($2 + \epsilon$) factor. To the best of
+					our knowledge, no constant factor approximation algorithm is known for
+					the problem even with capacity/budget/both violations. Even for the
+					uncapacitated variant of the problem, the natural LP is known to have
+					an unbounded integrality gap. We also present two constant factor
+					approximation algorithms for Capacitated k-Facility Location problem,
+					with violation in capacity and/or cardinality, thus, presenting a
+					trade-off in both violations. As a by-product, a constant factor
+					approximation algorithm for capacitated facility location problem with
+					uniform capacities is presented, violating the capacities by ($1 +
+					\epsilon$) factor. Though constant factor results are known for the
+					problem without violating the capacities, the result is interesting as
+					it is obtained by rounding the solution to the natural LP, which is
+					known to have an unbounded integrality gap without violating the
+					capacities. Thus, we achieve the best possible from the natural LP for
+					the problem.
+				</p>
+			</span>
+		</li>
+	</td>
 </tr>
 
 <tr>
